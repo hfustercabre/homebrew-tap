@@ -28,6 +28,12 @@ cask "autohush" do
 
   uninstall quit: "com.autohush.AutoHush"
 
+  zap trash: [
+    "~/Library/Caches/com.autohush.AutoHush",
+    "~/Library/HTTPStorages/com.autohush.AutoHush",
+    "~/Library/Preferences/com.autohush.AutoHush.plist",
+  ]
+
   caveats <<~EOS
     AutoHush is not notarized by Apple; this cask removes the download
     quarantine so it opens normally.
