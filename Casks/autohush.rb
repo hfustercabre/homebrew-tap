@@ -38,8 +38,9 @@ cask "autohush" do
     AutoHush is not notarized by Apple; this cask removes the download
     quarantine so it opens normally.
 
-    On first launch, choose your music player (Spotify, Apple Music or TIDAL),
-    then allow Automation (Accessibility for TIDAL) to control it, and System
-    Audio Recording to measure how loud other apps are, when macOS asks.
+    On first launch, choose your music player (Spotify, Apple Music, VLC,
+    Apple Podcasts or TIDAL), then allow Automation (Accessibility for Apple
+    Podcasts and TIDAL) to control it, and System Audio Recording to measure
+    how loud other apps are, when macOS asks.
   EOS
 end
