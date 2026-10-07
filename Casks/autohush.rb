@@ -39,8 +39,9 @@ cask "autohush" do
     quarantine so it opens normally.
 
     On first launch, choose your music player (Spotify, Apple Music, VLC,
-    Apple Podcasts or TIDAL), then allow Automation (Accessibility for Apple
-    Podcasts and TIDAL) to control it, and System Audio Recording to measure
-    how loud other apps are, when macOS asks.
+    Apple Podcasts, TIDAL or a Safari web app), then allow Automation
+    (Accessibility for Apple Podcasts, TIDAL and Safari web apps) to control
+    it, and System Audio Recording to measure how loud other apps are, when
+    macOS asks.
   EOS
 end
