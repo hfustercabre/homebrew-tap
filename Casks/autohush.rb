@@ -12,8 +12,8 @@ cask "autohush" do
   desc "Pauses your music while other apps play audio and resumes it afterwards"
   homepage "https://github.com/hfustercabre/AutoHush"
 
-  # AutoHush installs its own updates, so `brew upgrade` leaves it alone
-  # (unless --greedy).
+  # AutoHush installs its own updates. Homebrew 7 still lists it in
+  # `brew outdated` and upgrades it with `brew upgrade`.
   auto_updates true
   depends_on macos: :sequoia
 
