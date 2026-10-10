@@ -9,7 +9,7 @@ cask "autohush" do
 
   url "https://github.com/hfustercabre/AutoHush/releases/download/v#{version}/AutoHush-#{version}.dmg"
   name "AutoHush"
-  desc "Pauses your music while other apps play audio and resumes it afterwards"
+  desc "Pauses music, podcasts or videos while other apps play audio, then resumes them"
   homepage "https://github.com/hfustercabre/AutoHush"
 
   # AutoHush installs its own updates. Homebrew 7 still lists it in
