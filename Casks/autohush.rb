@@ -15,7 +15,7 @@ cask "autohush" do
   # AutoHush installs its own updates. Homebrew 7 still lists it in
   # `brew outdated` and upgrades it with `brew upgrade`.
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "AutoHush.app"
 
