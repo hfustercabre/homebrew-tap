@@ -15,11 +15,11 @@ cask "autohush" do
   # AutoHush installs its own updates. Homebrew 7 still lists it in
   # `brew outdated` and upgrades it with `brew upgrade`.
   auto_updates true
-  depends_on macos: :sequoia
+  depends_on macos: ">= :sonoma"
 
   app "AutoHush.app"
 
-  # AutoHush is signed with its own certificate but not notarized by Apple,
+  # AutoHush is signed by its developer team but not notarized by Apple,
   # so Gatekeeper would block the first launch. Installing from this tap is the
   # user's decision to trust it; drop the download quarantine accordingly.
   postflight_steps do
@@ -31,6 +31,7 @@ cask "autohush" do
   zap trash: [
     "~/Library/Caches/com.autohush.AutoHush",
     "~/Library/HTTPStorages/com.autohush.AutoHush",
+    "~/Library/Logs/AutoHush",
     "~/Library/Preferences/com.autohush.AutoHush.plist",
   ]
 
@@ -38,10 +39,10 @@ cask "autohush" do
     AutoHush is not notarized by Apple; this cask removes the download
     quarantine so it opens normally.
 
-    On first launch, choose your music player (Spotify, Apple Music, VLC,
-    Apple Podcasts, TIDAL or a Safari web app), then allow Automation
-    (Accessibility for Apple Podcasts, TIDAL and Safari web apps) to control
-    it, and System Audio Recording to measure how loud other apps are, when
-    macOS asks.
+    On first launch, choose your media player (Spotify, Apple Music, VLC,
+    Apple Podcasts, TIDAL, QuickTime Player, a Safari web app, or another
+    app checked with Add an App), then allow Automation (Accessibility for
+    Apple Podcasts, TIDAL, Safari web apps and added apps) to control it,
+    and Audio Recording to measure how loud other apps are, when macOS asks.
   EOS
 end
