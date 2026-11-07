@@ -42,7 +42,8 @@ cask "autohush" do
     On first launch, choose your media player (Spotify, Apple Music, VLC,
     Apple Podcasts, TIDAL, QuickTime Player, a Safari web app, or another
     app checked with Add an App), then allow Automation (Accessibility for
-    Apple Podcasts, TIDAL, Safari web apps and added apps) to control it,
-    and Audio Recording to measure how loud other apps are, when macOS asks.
+    Apple Podcasts, TIDAL, Safari web apps and added apps) to control it
+    when macOS asks. Audio Recording, which measures how loud other apps
+    are, is asked for by its Allow… button in AutoHush.
   EOS
 end
