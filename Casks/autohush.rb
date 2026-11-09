@@ -4,8 +4,8 @@
 #
 # AutoHush's Scripts/update-tap.sh sets version and sha256 for each release.
 cask "autohush" do
-  version "1.3.3"
-  sha256 "7bb57a10e185f56e9b5870caa090595b8d98a977469e8c751255e1cf8865579f"
+  version "1.3.4"
+  sha256 "00c946b180774846a84ca214051aa24d325b13ecc6709d4167801b0aa26a81e1"
 
   url "https://github.com/hfustercabre/AutoHush/releases/download/v#{version}/AutoHush-#{version}.dmg"
   name "AutoHush"
